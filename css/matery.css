@@ -22,8 +22,10 @@
 
     .head-container {
         position: absolute;
+        width: 90%;
         padding: 0px 30px;
-        width: 100%;
+        max-width: 1125px;
+        margin: auto;
     }
 
     .post-container {
