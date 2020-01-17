@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangqianying.github.io/"/>
-  <updated>2020-01-05T14:19:04.485Z</updated>
+  <updated>2020-01-17T18:53:08.988Z</updated>
   <id>https://zhangqianying.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新年的的返程列车</title>
+    <link href="https://zhangqianying.github.io/2020/01/18/newyear/"/>
+    <id>https://zhangqianying.github.io/2020/01/18/newyear/</id>
+    <published>2020-01-17T18:02:00.000Z</published>
+    <updated>2020-01-17T18:53:08.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;返程回家的乘车道&quot;&gt;&lt;a href=&quot;#返程回家的乘车道&quot; class=&quot;headerlink&quot; title=&quot;返程回家的乘车道&quot;&gt;&lt;/a&gt;返程回家的乘车道&lt;/h4&gt;&lt;p&gt; &lt;img src=&quot;/medias/img/newyear.jpg&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="返程" scheme="https://zhangqianying.github.io/categories/%E8%BF%94%E7%A8%8B/"/>
+    
+    
+      <category term="new Year" scheme="https://zhangqianying.github.io/tags/new-Year/"/>
+    
+  </entry>
   
   <entry>
     <title>Es6 中 Set 的使用</title>
