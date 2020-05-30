@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangqianying.github.io/"/>
-  <updated>2020-01-25T03:43:50.126Z</updated>
+  <updated>2020-05-30T09:15:06.269Z</updated>
   <id>https://zhangqianying.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>大年初一</title>
-    <link href="https://zhangqianying.github.io/2020/01/25/first/"/>
-    <id>https://zhangqianying.github.io/2020/01/25/first/</id>
-    <published>2020-01-25T03:02:00.000Z</published>
-    <updated>2020-01-25T03:43:50.126Z</updated>
+    <title>git 从入门到放弃</title>
+    <link href="https://zhangqianying.github.io/2020/05/30/git/"/>
+    <id>https://zhangqianying.github.io/2020/05/30/git/</id>
+    <published>2020-05-30T08:02:00.000Z</published>
+    <updated>2020-05-30T09:15:06.269Z</updated>
     
     <summary type="html">
     
@@ -29,45 +29,17 @@
       
         
         
-          &lt;h4 id=&quot;大年初一&quot;&gt;&lt;a href=&quot;#大年初一&quot; class=&quot;headerlink&quot; title=&quot;大年初一&quot;&gt;&lt;/a&gt;大年初一&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/medias/img/firstDay.jpg&quot; alt=&quot;初一&quot;&gt; &lt;/p&gt;
-&lt;h4
+          &lt;h5 id=&quot;git-重新绑定远程仓库&quot;&gt;&lt;a href=&quot;#git-重新绑定远程仓库&quot; class=&quot;headerlink&quot; title=&quot;git 重新绑定远程仓库&quot;&gt;&lt;/a&gt;git 重新绑定远程仓库&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;git remote rm
         
       
     
     </summary>
     
     
-      <category term="初一" scheme="https://zhangqianying.github.io/categories/%E5%88%9D%E4%B8%80/"/>
+      <category term="git" scheme="https://zhangqianying.github.io/categories/git/"/>
     
     
-      <category term="first day" scheme="https://zhangqianying.github.io/tags/first-day/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新年的的返程列车</title>
-    <link href="https://zhangqianying.github.io/2020/01/18/newyear/"/>
-    <id>https://zhangqianying.github.io/2020/01/18/newyear/</id>
-    <published>2020-01-17T18:02:00.000Z</published>
-    <updated>2020-01-17T19:03:52.969Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;返程回家的乘车道&quot;&gt;&lt;a href=&quot;#返程回家的乘车道&quot; class=&quot;headerlink&quot; title=&quot;返程回家的乘车道&quot;&gt;&lt;/a&gt;返程回家的乘车道&lt;/h4&gt;&lt;p&gt; &lt;img src=&quot;/medias/img/newyear.jpg&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="返程" scheme="https://zhangqianying.github.io/categories/%E8%BF%94%E7%A8%8B/"/>
-    
-    
-      <category term="new Year" scheme="https://zhangqianying.github.io/tags/new-Year/"/>
+      <category term="git" scheme="https://zhangqianying.github.io/tags/git/"/>
     
   </entry>
   
@@ -76,7 +48,7 @@
     <link href="https://zhangqianying.github.io/2020/01/05/es6/"/>
     <id>https://zhangqianying.github.io/2020/01/05/es6/</id>
     <published>2020-01-05T10:25:00.000Z</published>
-    <updated>2020-01-05T14:19:04.485Z</updated>
+    <updated>2020-02-02T07:33:55.429Z</updated>
     
     <summary type="html">
     
