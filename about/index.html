@@ -105,17 +105,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -193,17 +182,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -340,21 +318,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">2</a></span>
+    <span class="count"><a href="/categories">3</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">3</a></span>
+    <span class="count"><a href="/tags">4</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -370,21 +348,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">2</a></span>
+    <span class="count"><a href="/categories">3</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">3</a></span>
+    <span class="count"><a href="/tags">4</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -528,7 +506,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,1,0,0,0,1,0],
+                data: [0,0,0,0,0,0,0,1,0,0,0,1,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -570,7 +548,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"前端","value":1},{"name":"git","value":1}],
+                data: [{"name":"Es6 前端","value":1},{"name":"git","value":1},{"name":"JavaScript","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -594,7 +572,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Es6","前端","git"]
+                data: ["前端","Es6","git","JavaScript"]
             }
         ],
         yAxis: [
@@ -607,7 +585,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1,1,1],
+                data: [2,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -636,17 +614,6 @@
     tagsChart.setOption(tagsOption);
 </script>
 
-
-                
-                
-<div class="my-projects">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
-    </div>
-    <div class="row">
-        
-    </div>
-</div>
 
                 
 
@@ -696,10 +663,54 @@
         <div class="col s12 m6 l6" data-aos="fade-up">
             <div class="skillbar">
                 <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 90%">
-                    <span>SQL</span>
+                     style="background: linear-gradient(to right, #ff9a9e 0%, #fecfef 100%); width: 80%">
+                    <span>Git</span>
+                </div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l6" data-aos="fade-up">
+            <div class="skillbar">
+                <div class="skillbar-title"
+                     style="background: linear-gradient(to right, #feada6 0%, #f5efef 100%); width: 90%">
+                    <span>Vue</span>
                 </div>
                 <div class="skill-bar-percent">90%</div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l6" data-aos="fade-up">
+            <div class="skillbar">
+                <div class="skillbar-title"
+                     style="background: linear-gradient(to right, #43e97b 0%, #f5576c 100%); width: 90%">
+                    <span>uni-app</span>
+                </div>
+                <div class="skill-bar-percent">90%</div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l6" data-aos="fade-up">
+            <div class="skillbar">
+                <div class="skillbar-title"
+                     style="background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); width: 70%">
+                    <span>React</span>
+                </div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l6" data-aos="fade-up">
+            <div class="skillbar">
+                <div class="skillbar-title"
+                     style="background: linear-gradient(to right, #fa709a 0%, #fee140 100%); width: 70%">
+                    <span>Taro</span>
+                </div>
+                <div class="skill-bar-percent">70%</div>
             </div>
         </div>
         
@@ -729,6 +740,8 @@
             <a href="/tags/git/">
                 <span class="chip center-align waves-effect waves-light chip-default">git</span>
             </a>
+            
+            
             
             
         </div>
@@ -901,6 +914,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">5.7k</span>&nbsp;字
             
             
             
