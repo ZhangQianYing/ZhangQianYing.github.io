@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小闹</title>
+  <title>爱清浅</title>
   
-  <subtitle>小闹的博客</subtitle>
+  <subtitle>爱清浅的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangqianying.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://zhangqianying.github.io/</id>
   
   <author>
-    <name>小闹</name>
+    <name>爱清浅</name>
     
   </author>
   
