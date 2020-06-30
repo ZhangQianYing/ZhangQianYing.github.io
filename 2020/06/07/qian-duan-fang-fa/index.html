@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Es6 中 Set 的使用, 爱清浅">
+    <meta name="keywords" content="12 个实用的前端开发技巧, 爱清浅">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Es6 中 Set 的使用 | 爱清浅</title>
+    <title>12 个实用的前端开发技巧 | 爱清浅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -265,12 +265,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/images/es6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/images/js.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Es6 中 Set 的使用</h1>
+                    <h1 class="description center-align post-title">12 个实用的前端开发技巧</h1>
                 </div>
             </div>
         </div>
@@ -395,12 +395,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Es6/">
-                                <span class="chip bg-color">Es6</span>
-                            </a>
-                        
                             <a href="/tags/%E5%89%8D%E7%AB%AF/">
                                 <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                            <a href="/tags/Css/">
+                                <span class="chip bg-color">Css</span>
                             </a>
                         
                     </div>
@@ -411,8 +411,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Es6-%E5%89%8D%E7%AB%AF/" class="post-category">
-                                Es6 前端
+                            <a href="/categories/Css/" class="post-category">
+                                Css
                             </a>
                         
                     </div>
@@ -424,28 +424,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-05
+                    2020-06-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-07
+                    2020-06-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    659
+                    987
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -460,90 +460,104 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p> Set是一个新的数据结构，和其他语言的特性差不多，当然，作为js中的Set，他还是有一些属于js的特点。 </p>
-<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p> 初始化一个Set有一个可选的参数，这个参数必须是一个可迭代的对象，可迭代对象包括String、Array、Array-Like obejct(Arguments、NodeList)、Typped Array、Set、Map和用户定义的可迭代对象 </p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span>iterable<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token string">'1234'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(4) {"1", "2", "3", "4"}</span></code></pre>
-<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(4) {1, 2, 3, 4}</span></code></pre>
-<h4 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h4><pre class=" language-js"><code class="language-js">
-<span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
+                <h4 id="1-利用-CSS-穿透覆盖默认样式"><a href="#1-利用-CSS-穿透覆盖默认样式" class="headerlink" title="1. 利用 CSS 穿透覆盖默认样式"></a>1. 利用 CSS 穿透覆盖默认样式</h4><p>常见发生场景：假如我们需要通过 input，type=”file”来上传文件，而这个 input 的默认样式，可以说是非常地<code>丑</code>。所以我们希望通过一张图片，与这个 input 大小一样，位置一致地盖在上面。这个时候，显然，这个时候点击图片，input 是不会起作用的。就是因为 img 隔绝了 click 的穿透，而我们希望的是，这个 img 只是视觉上遮挡了 input 的样式，但是点击的时候还是点击到 input。所以，只要让 img 可穿透即可。</p>
+<p>css 代码如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">img </span><span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="2-实现自定义原生-select-控件的样式"><a href="#2-实现自定义原生-select-控件的样式" class="headerlink" title="2. 实现自定义原生 select 控件的样式"></a>2. 实现自定义原生 select 控件的样式</h4><p>由于 select 移动端原生样式很丑，但是原生弹出效果是符合我们设计的原则。直接修改 select 的样式的时候，一个奇怪的现象出现了，在 chrome 上调试的时候，自己定义的样式起了作用，在 Android 手机上也起了作用，但是到了 ios 手机上就不行了，典型的不兼容问题，这个时候禁用原生的样式即可。</p>
+<p>css 代码如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">select </span><span class="token punctuation">{</span>
+  <span class="token property">-webkit-appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="3-文本溢出处理"><a href="#3-文本溢出处理" class="headerlink" title="3. 文本溢出处理"></a>3. 文本溢出处理</h4><p>移动设备相对来说页面较小，很多时候显示的一些信息都需要省略部分。最常见的是单行标题溢出省略，多行详情介绍溢出省略。现在都用框架开发了，这种建议需求建议形成一个基础组件，方便快捷。</p>
+<p>css 代码如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">//单行
+<span class="token class">.single</span> </span><span class="token punctuation">{</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+  <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// Set(4) {1, 2, 3, 4}</span></code></pre>
-<h4 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(4) {1, 2, 3, 4}</span></code></pre>
-<h4 id="添加值"><a href="#添加值" class="headerlink" title="添加值"></a>添加值</h4><p> 初始化一个Set之后，可以继续往里面添加值 </p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">set</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(1) {1}</span></code></pre>
-<p> 借用这个特性可以搞很多事，比如过滤重复值 </p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(3){1,2,3}</span></code></pre>
-<p> 但是注意，两个相同的对象字面量是不同的对象，具有不同的引用，所以<code>Set</code>是无法将两个不同引用的对象标记为同一个的，即使他们看过去是一样的 </p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> a<span class="token operator">=</span><span class="token punctuation">{</span>num<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">}</span>
-<span class="token keyword">let</span> b<span class="token operator">=</span><span class="token punctuation">{</span>num<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">}</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token operator">===</span>b<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//false</span>
-<span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token comment" spellcheck="true">// Set(2){{num:1},{num:2}}</span>
-<span class="token keyword">let</span> c<span class="token operator">=</span>a
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token operator">===</span>a<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//true</span>
-
-<span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token comment" spellcheck="true">// Set(1){{num:1}}</span></code></pre>
-<h4 id="判断是否包含"><a href="#判断是否包含" class="headerlink" title="判断是否包含"></a>判断是否包含</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// true</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//false</span></code></pre>
-<h4 id="获取数量"><a href="#获取数量" class="headerlink" title="获取数量"></a>获取数量</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span>size <span class="token comment" spellcheck="true">//3</span></code></pre>
-<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token keyword">delete</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">// true</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token keyword">delete</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">// false</span></code></pre>
-<h4 id="清空"><a href="#清空" class="headerlink" title="清空"></a>清空</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">set</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// Set(0){}</span></code></pre>
-<h4 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 1</span>
-<span class="token comment" spellcheck="true">// 2</span>
-<span class="token comment" spellcheck="true">// 3</span></code></pre>
-<h4 id="获取迭代器"><a href="#获取迭代器" class="headerlink" title="获取迭代器"></a>获取迭代器</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> entries<span class="token operator">=</span><span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// [1,1]</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// [2,2]</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// [3,3]</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// undefined</span>
-
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> <span class="token keyword">set</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+<span class="token selector">//多行
+<span class="token class">.more</span> </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> -webkit-box <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+  <span class="token property">work-break</span><span class="token punctuation">:</span> break-all<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
+  <span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span> //指定行数
+<span class="token punctuation">}</span></code></pre>
+<h4 id="4-开启弹性滚动"><a href="#4-开启弹性滚动" class="headerlink" title="4. 开启弹性滚动"></a>4. 开启弹性滚动</h4><p>css 代码如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> scroll<span class="token punctuation">;</span>
+  <span class="token property">-webkit-overflow-scrolling</span><span class="token punctuation">:</span> touch<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>注意：Android 不支持一像素边框设置原生的弹性滚动，但可以借助第三方库 iScroll 来实现。</p>
+<h4 id="5-一像素边框设置"><a href="#5-一像素边框设置" class="headerlink" title="5. 一像素边框设置"></a>5. 一像素边框设置</h4><p>很多时候，想保持边框的大小在任何设置上都是 1px，但是因为 1px 使用 2dp 渲染，也就是说会显示为 2px 大小。所以，要采用 css3 缩放一下。</p>
+<p>css 代码如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.folder</span> li </span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// 1</span>
-<span class="token comment" spellcheck="true">// 2</span>
-<span class="token comment" spellcheck="true">// 3</span></code></pre>
-<h4 id="获取键迭代器"><a href="#获取键迭代器" class="headerlink" title="获取键迭代器"></a>获取键迭代器</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> keys<span class="token operator">=</span><span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>keys<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 1</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>keys<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 2</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>keys<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 3</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>keys<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// undefined</span>
-
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">{</span>key<span class="token punctuation">}</span> <span class="token keyword">of</span> <span class="token keyword">set</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+<span class="token selector"><span class="token class">.folder</span> li + li<span class="token pseudo-element">:before</span> </span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> -<span class="token number">1</span>px<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">1</span>px<span class="token punctuation">;</span>
+  <span class="token property">border-top</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid <span class="token hexcode">#ccc</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="6-防止鼠标选中事件"><a href="#6-防止鼠标选中事件" class="headerlink" title="6. 防止鼠标选中事件"></a>6. 防止鼠标选中事件</h4><pre class=" language-css"><code class="language-css">&lt;div class=<span class="token string">"mask"</span> onselectstart=<span class="token string">"return false"</span>>&lt;/div>
+&lt;div class=<span class="token string">"link"</span>>
+  &lt;a href=<span class="token string">"javascrip;;"</span>>登录&lt;/a>
+&lt;/div></code></pre>
+<p>给元素添加了<code>onslectstart="return false"</code>,就可以防止鼠标选中事件。</p>
+<h4 id="7-给动态添加的元素绑定事件"><a href="#7-给动态添加的元素绑定事件" class="headerlink" title="7. 给动态添加的元素绑定事件"></a>7. 给动态添加的元素绑定事件</h4><p>利用事件代理达到这个效果即可。如：</p>
+<pre class=" language-css"><code class="language-css">$<span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token number">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"click"</span>, <span class="token string">".large"</span>, slide<span class="token punctuation">)</span><span class="token punctuation">;</span> //jq中的写法
+//第一个参数表示的是对应事件，第二个是需要绑定事件的元素的id或class，第三个是绑定的对应的事件函数名</code></pre>
+<h4 id="8-兼容-IE-浏览器的透明度处理"><a href="#8-兼容-IE-浏览器的透明度处理" class="headerlink" title="8. 兼容 IE 浏览器的透明度处理"></a>8. 兼容 IE 浏览器的透明度处理</h4><pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.ui</span> </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">0.4</span><span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">Alpha</span><span class="token punctuation">(</span>opacity=<span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span> //兼容IE浏览器的处理
+<span class="token punctuation">}</span></code></pre>
+<h4 id="9-常用的全屏居中-JS-函数"><a href="#9-常用的全屏居中-JS-函数" class="headerlink" title="9. 常用的全屏居中 JS 函数"></a>9. 常用的全屏居中 JS 函数</h4><pre class=" language-css"><code class="language-css"><span class="token selector">//获取元素
+function getElement(ele) </span><span class="token punctuation">{</span>
+  return document<span class="token number">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>ele<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// 1</span>
-<span class="token comment" spellcheck="true">// 2</span>
-<span class="token comment" spellcheck="true">// 3</span></code></pre>
-<h4 id="获取值迭代器"><a href="#获取值迭代器" class="headerlink" title="获取值迭代器"></a>获取值迭代器</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token keyword">set</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> values<span class="token operator">=</span><span class="token keyword">set</span><span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 1</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 2</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 3</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// undefined</span>
+<span class="token selector">//自动居中函数
+function autoCenter(el) </span><span class="token punctuation">{</span>
+  var bodyX = document<span class="token number">.</span>documentElement<span class="token number">.</span>offsetWidth || document<span class="token number">.</span>body<span class="token number">.</span>offsetWidth<span class="token punctuation">;</span>
+  var bodyY =
+    document<span class="token number">.</span>documentElement<span class="token number">.</span>offsetHeight || document<span class="token number">.</span>body<span class="token number">.</span>offsetHeight<span class="token punctuation">;</span>
 
-<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">{</span>value<span class="token punctuation">}</span> <span class="token keyword">of</span> <span class="token keyword">set</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// 1</span>
-<span class="token comment" spellcheck="true">// 2</span>
-<span class="token comment" spellcheck="true">// 3</span></code></pre>
-<p> 以上就是ES6中Set的用法介绍（代码示例）的详细内容 ,更多的内容后续更新</p>
+  var elementX = el<span class="token number">.</span>offsetWidth<span class="token punctuation">;</span>
+  var elementY = el<span class="token number">.</span>offsetHeight<span class="token punctuation">;</span>
+
+  el<span class="token number">.</span>style<span class="token number">.</span>left = <span class="token punctuation">(</span>bodyX - elementX<span class="token punctuation">)</span> / <span class="token number">2</span> + <span class="token string">"px"</span><span class="token punctuation">;</span>
+  el<span class="token number">.</span>style<span class="token number">.</span>top = <span class="token punctuation">(</span>bodyY - elementY<span class="token punctuation">)</span> / <span class="token number">2</span> + <span class="token string">"px"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="10-常用的全屏居中-CSS-函数"><a href="#10-常用的全屏居中-CSS-函数" class="headerlink" title="10. 常用的全屏居中 CSS 函数"></a>10. 常用的全屏居中 CSS 函数</h4><pre class=" language-css"><code class="language-css"><span class="token selector">body </span><span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>vh<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">100</span>vh<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="11-在输入框输入完内容并按回车的时候进行判断"><a href="#11-在输入框输入完内容并按回车的时候进行判断" class="headerlink" title="11. 在输入框输入完内容并按回车的时候进行判断"></a>11. 在输入框输入完内容并按回车的时候进行判断</h4><p>比如说输入完 <code>11000</code> 在按下回车的时候。</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">&lt;input type="textbox" id="textbox1" onkeypress="CheckInfo" />
+
+    &lt;script language="javascript" type="text/javascript">
+    function CheckInfo()
+    </span><span class="token punctuation">{</span>
+    <span class="token selector">if (event<span class="token class">.keyCode</span>==13) </span><span class="token punctuation">{</span>
+          <span class="token function">alert</span><span class="token punctuation">(</span>textbox<span class="token number">1.</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    &lt;/script></code></pre>
+<h4 id="12-chrome-调试快捷键"><a href="#12-chrome-调试快捷键" class="headerlink" title="12.  chrome 调试快捷键"></a>12.  chrome 调试快捷键</h4><p>① ctrl+shift+f 全文查找</p>
+<p>② ctrl+o 查找文件名</p>
+<p>③ ctrl+shift+o 查找 js <strong>函数名</strong></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -587,7 +601,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhangqianying.github.io/2020/01/05/es6/">https://zhangqianying.github.io/2020/01/05/es6/</a>
+                    <a href="https://zhangqianying.github.io/2020/06/07/qian-duan-fang-fa/">https://zhangqianying.github.io/2020/06/07/qian-duan-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -625,12 +639,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Es6/">
-                                    <span class="chip bg-color">Es6</span>
-                                </a>
-                            
                                 <a href="/tags/%E5%89%8D%E7%AB%AF/">
                                     <span class="chip bg-color">前端</span>
+                                </a>
+                            
+                                <a href="/tags/Css/">
+                                    <span class="chip bg-color">Css</span>
                                 </a>
                             
                         </div>
@@ -820,82 +834,35 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/30/git/">
+                <a href="/2020/06/07/qian-duan-fang-fa/">
                     <div class="card-image">
                         
-                        <img src="/medias/images/git.png" class="responsive-img" alt="git 从入门到放弃">
+                        <img src="/medias/images/js.jpg" class="responsive-img" alt="12 个实用的前端开发技巧">
                         
-                        <span class="card-title">git 从入门到放弃</span>
+                        <span class="card-title">12 个实用的前端开发技巧</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            git 让你的开发更加有意思，更加高效
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-30
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/git/" class="post-category">
-                                    git
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/05/es6/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/images/es6.jpg" class="responsive-img" alt="Es6 中 Set 的使用">
-                        
-                        <span class="card-title">Es6 中 Set 的使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Es6中 Set 用法回顾
+                            开发技巧
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Es6-%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    Es6 前端
+                            <a href="/categories/Css/" class="post-category">
+                                    Css
                                 </a>
                             
                             
@@ -906,12 +873,64 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Es6/">
-                        <span class="chip bg-color">Es6</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
+                    
+                    <a href="/tags/Css/">
+                        <span class="chip bg-color">Css</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/07/gong-ju-fang-fa/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/images/js.jpg" class="responsive-img" alt="前端常用60余种工具方法">
+                        
+                        <span class="card-title">前端常用60余种工具方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            工具方法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
                     
                     <a href="/tags/%E5%89%8D%E7%AB%AF/">
                         <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>

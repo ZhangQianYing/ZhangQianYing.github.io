@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhangqianying.github.io/"/>
-  <updated>2020-06-07T11:56:28.162Z</updated>
+  <updated>2020-06-30T14:45:38.448Z</updated>
   <id>https://zhangqianying.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>12 个实用的前端开发技巧</title>
+    <link href="https://zhangqianying.github.io/2020/06/07/qian-duan-fang-fa/"/>
+    <id>https://zhangqianying.github.io/2020/06/07/qian-duan-fang-fa/</id>
+    <published>2020-06-07T08:02:00.000Z</published>
+    <updated>2020-06-30T14:45:38.448Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-利用-CSS-穿透覆盖默认样式&quot;&gt;&lt;a href=&quot;#1-利用-CSS-穿透覆盖默认样式&quot; class=&quot;headerlink&quot; title=&quot;1. 利用 CSS 穿透覆盖默认样式&quot;&gt;&lt;/a&gt;1. 利用 CSS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Css" scheme="https://zhangqianying.github.io/categories/Css/"/>
+    
+    
+      <category term="前端" scheme="https://zhangqianying.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Css" scheme="https://zhangqianying.github.io/tags/Css/"/>
+    
+  </entry>
   
   <entry>
     <title>前端常用60余种工具方法</title>
